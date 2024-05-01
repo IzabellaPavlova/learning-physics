@@ -1,0 +1,106 @@
+%%% -*-BibTeX-*-
+%%% Do NOT edit. File created by BibTeX with style
+%%% ACM-Reference-Format-Journals [18-Jan-2012].
+
+\begin{thebibliography}{6}
+
+%%% ====================================================================
+%%% NOTE TO THE USER: you can override these defaults by providing
+%%% customized versions of any of these macros before the \bibliography
+%%% command.  Each of them MUST provide its own final punctuation,
+%%% except for \shownote{}, \showDOI{}, and \showURL{}.  The latter two
+%%% do not use final punctuation, in order to avoid confusing it with
+%%% the Web address.
+%%%
+%%% To suppress output of a particular field, define its macro to expand
+%%% to an empty string, or better, \unskip, like this:
+%%%
+%%% \newcommand{\showDOI}[1]{\unskip}   % LaTeX syntax
+%%%
+%%% \def \showDOI #1{\unskip}           % plain TeX syntax
+%%%
+%%% ====================================================================
+
+\ifx \showCODEN    \undefined \def \showCODEN     #1{\unskip}     \fi
+\ifx \showDOI      \undefined \def \showDOI       #1{#1}\fi
+\ifx \showISBNx    \undefined \def \showISBNx     #1{\unskip}     \fi
+\ifx \showISBNxiii \undefined \def \showISBNxiii  #1{\unskip}     \fi
+\ifx \showISSN     \undefined \def \showISSN      #1{\unskip}     \fi
+\ifx \showLCCN     \undefined \def \showLCCN      #1{\unskip}     \fi
+\ifx \shownote     \undefined \def \shownote      #1{#1}          \fi
+\ifx \showarticletitle \undefined \def \showarticletitle #1{#1}   \fi
+\ifx \showURL      \undefined \def \showURL       {\relax}        \fi
+% The following commands are used for tagged output and should be
+% invisible to TeX
+\providecommand\bibfield[2]{#2}
+\providecommand\bibinfo[2]{#2}
+\providecommand\natexlab[1]{#1}
+\providecommand\showeprint[2][]{arXiv:#2}
+
+\bibitem[Chen et~al\mbox{.}(2018)]%
+        {NEURIPS2018_69386f6b}
+\bibfield{author}{\bibinfo{person}{Ricky T.~Q. Chen}, \bibinfo{person}{Yulia Rubanova}, \bibinfo{person}{Jesse Bettencourt}, {and} \bibinfo{person}{David~K Duvenaud}.} \bibinfo{year}{2018}\natexlab{}.
+\newblock \showarticletitle{Neural Ordinary Differential Equations}. In \bibinfo{booktitle}{\emph{Advances in Neural Information Processing Systems}}, \bibfield{editor}{\bibinfo{person}{S.~Bengio}, \bibinfo{person}{H.~Wallach}, \bibinfo{person}{H.~Larochelle}, \bibinfo{person}{K.~Grauman}, \bibinfo{person}{N.~Cesa-Bianchi}, {and} \bibinfo{person}{R.~Garnett}} (Eds.), Vol.~\bibinfo{volume}{31}. \bibinfo{publisher}{Curran Associates, Inc.}
+\newblock
+\urldef\tempurl%
+\url{https://proceedings.neurips.cc/paper_files/paper/2018/file/69386f6bb1dfed68692a24c8686939b9-Paper.pdf}
+\showURL{%
+\tempurl}
+
+
+\bibitem[He et~al\mbox{.}(2016)]%
+        {7780459}
+\bibfield{author}{\bibinfo{person}{Kaiming He}, \bibinfo{person}{Xiangyu Zhang}, \bibinfo{person}{Shaoqing Ren}, {and} \bibinfo{person}{Jian Sun}.} \bibinfo{year}{2016}\natexlab{}.
+\newblock \showarticletitle{Deep Residual Learning for Image Recognition}. In \bibinfo{booktitle}{\emph{2016 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)}}. \bibinfo{pages}{770--778}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1109/CVPR.2016.90}
+\showDOI{\tempurl}
+
+
+\bibitem[Rahaman et~al\mbox{.}(2019)]%
+        {rahamanspectral}
+\bibfield{author}{\bibinfo{person}{Nasim Rahaman}, \bibinfo{person}{Aristide Baratin}, \bibinfo{person}{Devansh Arpit}, \bibinfo{person}{Felix Draxler}, \bibinfo{person}{Min Lin}, \bibinfo{person}{Fred Hamprecht}, \bibinfo{person}{Yoshua Bengio}, {and} \bibinfo{person}{Aaron Courville}.} \bibinfo{year}{2019}\natexlab{}.
+\newblock \showarticletitle{On the Spectral Bias of Neural Networks}. \bibinfo{pages}{5301--5310}.
+\newblock
+\showISSN{1938-7228}
+\urldef\tempurl%
+\url{http://proceedings.mlr.press/v97/rahaman19a.html}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Tancik et~al\mbox{.}(2020)]%
+        {tancik2020ffn}
+\bibfield{author}{\bibinfo{person}{Matthew Tancik}, \bibinfo{person}{Pratul~P. Srinivasan}, \bibinfo{person}{Ben Mildenhall}, \bibinfo{person}{Sara Fridovich-Keil}, \bibinfo{person}{Nithin Raghavan}, \bibinfo{person}{Utkarsh Singhal}, \bibinfo{person}{Ravi Ramamoorthi}, \bibinfo{person}{Jonathan~T. Barron}, {and} \bibinfo{person}{Ren Ng}.} \bibinfo{year}{2020}\natexlab{}.
+\newblock \showarticletitle{Fourier Features Let Networks Learn High Frequency Functions in Low Dimensional Domains}. In \bibinfo{booktitle}{\emph{Advances in Neural Information Processing Systems (NeurIPS)}}. \bibinfo{publisher}{Curran Associates, Inc.}
+\newblock
+\urldef\tempurl%
+\url{http://arxiv.org/abs/2006.10739v1}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Vaswani et~al\mbox{.}(2017)]%
+        {NIPS2017_3f5ee243}
+\bibfield{author}{\bibinfo{person}{Ashish Vaswani}, \bibinfo{person}{Noam Shazeer}, \bibinfo{person}{Niki Parmar}, \bibinfo{person}{Jakob Uszkoreit}, \bibinfo{person}{Llion Jones}, \bibinfo{person}{Aidan~N Gomez}, \bibinfo{person}{\L~ukasz Kaiser}, {and} \bibinfo{person}{Illia Polosukhin}.} \bibinfo{year}{2017}\natexlab{}.
+\newblock \showarticletitle{Attention is All you Need}. In \bibinfo{booktitle}{\emph{Advances in Neural Information Processing Systems}}, \bibfield{editor}{\bibinfo{person}{I.~Guyon}, \bibinfo{person}{U.~Von Luxburg}, \bibinfo{person}{S.~Bengio}, \bibinfo{person}{H.~Wallach}, \bibinfo{person}{R.~Fergus}, \bibinfo{person}{S.~Vishwanathan}, {and} \bibinfo{person}{R.~Garnett}} (Eds.), Vol.~\bibinfo{volume}{30}. \bibinfo{publisher}{Curran Associates, Inc.}
+\newblock
+\urldef\tempurl%
+\url{https://proceedings.neurips.cc/paper_files/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Yang et~al\mbox{.}(2022)]%
+        {NEURIPS2022_6d5e0357}
+\bibfield{author}{\bibinfo{person}{Tsung-Yen Yang}, \bibinfo{person}{Justinian Rosca}, \bibinfo{person}{Karthik Narasimhan}, {and} \bibinfo{person}{Peter~J Ramadge}.} \bibinfo{year}{2022}\natexlab{}.
+\newblock \showarticletitle{Learning Physics Constrained Dynamics Using Autoencoders}. In \bibinfo{booktitle}{\emph{Advances in Neural Information Processing Systems}}, \bibfield{editor}{\bibinfo{person}{S.~Koyejo}, \bibinfo{person}{S.~Mohamed}, \bibinfo{person}{A.~Agarwal}, \bibinfo{person}{D.~Belgrave}, \bibinfo{person}{K.~Cho}, {and} \bibinfo{person}{A.~Oh}} (Eds.), Vol.~\bibinfo{volume}{35}. \bibinfo{publisher}{Curran Associates, Inc.}, \bibinfo{pages}{17157--17172}.
+\newblock
+\urldef\tempurl%
+\url{https://proceedings.neurips.cc/paper_files/paper/2022/file/6d5e035724687454549b97d6c805dc84-Paper-Conference.pdf}
+\showURL{%
+\tempurl}
+
+
+\end{thebibliography}
