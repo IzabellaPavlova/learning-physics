@@ -2,7 +2,7 @@
 %%% Do NOT edit. File created by BibTeX with style
 %%% ACM-Reference-Format-Journals [18-Jan-2012].
 
-\begin{thebibliography}{6}
+\begin{thebibliography}{7}
 
 %%% ====================================================================
 %%% NOTE TO THE USER: you can override these defaults by providing
@@ -56,6 +56,17 @@
 \urldef\tempurl%
 \url{https://doi.org/10.1109/CVPR.2016.90}
 \showDOI{\tempurl}
+
+
+\bibitem[Jacot et~al\mbox{.}(2018)]%
+        {NEURIPS2018_5a4be1fa}
+\bibfield{author}{\bibinfo{person}{Arthur Jacot}, \bibinfo{person}{Franck Gabriel}, {and} \bibinfo{person}{Clement Hongler}.} \bibinfo{year}{2018}\natexlab{}.
+\newblock \showarticletitle{Neural Tangent Kernel: Convergence and Generalization in Neural Networks}. In \bibinfo{booktitle}{\emph{Advances in Neural Information Processing Systems}}, \bibfield{editor}{\bibinfo{person}{S.~Bengio}, \bibinfo{person}{H.~Wallach}, \bibinfo{person}{H.~Larochelle}, \bibinfo{person}{K.~Grauman}, \bibinfo{person}{N.~Cesa-Bianchi}, {and} \bibinfo{person}{R.~Garnett}} (Eds.), Vol.~\bibinfo{volume}{31}. \bibinfo{publisher}{Curran Associates, Inc.}
+\newblock
+\urldef\tempurl%
+\url{https://proceedings.neurips.cc/paper_files/paper/2018/file/5a4be1fa34e62bb8a6ec6b91d2462f5a-Paper.pdf}
+\showURL{%
+\tempurl}
 
 
 \bibitem[Rahaman et~al\mbox{.}(2019)]%

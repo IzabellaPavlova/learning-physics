@@ -14,6 +14,7 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Warning--empty address in NEURIPS2018_69386f6b
 Warning--empty publisher in 7780459
 Warning--empty address in 7780459
+Warning--empty address in NEURIPS2018_5a4be1fa
 Warning--empty booktitle in rahamanspectral
 Warning--empty publisher in rahamanspectral
 Warning--empty address in rahamanspectral
@@ -21,45 +22,45 @@ Warning--empty address in tancik2020ffn
 Warning--page numbers missing in both pages and numpages fields in tancik2020ffn
 Warning--empty address in NIPS2017_3f5ee243
 Warning--empty address in NEURIPS2022_6d5e0357
-You've used 6 entries,
+You've used 7 entries,
             5981 wiz_defined-function locations,
-            1520 strings with 20004 characters,
-and the built_in function-call counts, 8196 in all, are:
-= -- 774
-> -- 401
+            1525 strings with 20271 characters,
+and the built_in function-call counts, 9325 in all, are:
+= -- 876
+> -- 452
 < -- 0
-+ -- 136
-- -- 130
-* -- 718
-:= -- 864
-add.period$ -- 30
-call.type$ -- 6
-change.case$ -- 61
-chr.to.int$ -- 6
-cite$ -- 16
-duplicate$ -- 710
-empty$ -- 495
-format.name$ -- 154
-if$ -- 1844
++ -- 152
+- -- 145
+* -- 821
+:= -- 980
+add.period$ -- 35
+call.type$ -- 7
+change.case$ -- 68
+chr.to.int$ -- 7
+cite$ -- 18
+duplicate$ -- 817
+empty$ -- 571
+format.name$ -- 173
+if$ -- 2101
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 30
-newline$ -- 106
-num.names$ -- 48
-pop$ -- 337
+missing$ -- 35
+newline$ -- 117
+num.names$ -- 57
+pop$ -- 389
 preamble$ -- 1
-purify$ -- 109
+purify$ -- 124
 quote$ -- 0
-skip$ -- 258
+skip$ -- 293
 stack$ -- 0
-substring$ -- 502
-swap$ -- 62
+substring$ -- 561
+swap$ -- 68
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 180
-warning$ -- 10
-while$ -- 28
+type$ -- 210
+warning$ -- 11
+while$ -- 32
 width$ -- 0
-write$ -- 177
-(There were 10 warnings)
+write$ -- 201
+(There were 11 warnings)
