@@ -58,7 +58,7 @@ synchronization errors.
 multi-channel, radio interference, time synchronization}
 
 
-\thanks{This report is a part of the lecture, Master-Seminar - Deep Learning in Physics, Informatics 15, Technical University of Munich.
+\thanks{This report is a part of the lecture, Master-Seminar --- Deep Learning in Physics, Informatics 15, Technical University of Munich.
 \\
 The original work is introduced by~\cite{NEURIPS2022_6d5e0357}.}
 \maketitle
@@ -72,11 +72,12 @@ In addition, one may think that the estimator network can directly predict the s
 The autoencoder with latent physics (ALPS) model (Fig.~\ref{fig:architecture}) estimates states and physical parameters of the system using four main components. Firstly, encoder ${h}$ estimates states $\tilde{x}_{s}$ from an observation sequence ${o_s}$. Secondly, estimator ${f}$ predicts physical parameters ${\theta}$  from the states $\tilde{x}_{s}$. Thirdly, using the initial state and predicted parameters ${\theta}$ physics simulator generates a state trajectory $\hat{x}_{s}$ consistent with the laws of physics. Lastly, a decoder ${g}$ reconstructs observations $\hat{o}_{s}$ from the state trajectory $\hat{x}_{s}$. The autoencoder is trained to minimize the observation reconstruction loss $\sum_{s} \lVert o_{s} - \hat{o}_{s} \rVert_{2}^{2}$. In addition, the encoder ${h}$ is trained to minimize the sum of squared state errors $\sum_{s} \lVert \tilde{x}_{s} - \hat{x}_{s} \rVert_{2}^{2}$.
 \begin{figure}
   \centering
-  \includegraphics[width=0.4\textwidth]{architecture}
+  \includegraphics[width=0.45\textwidth]{architecture}
   \caption{ALPS Architecture}
   \label{fig:architecture}
 \end{figure}
-\textbf{The encoder network.} Depending on the type of observations — pixel images or direct measurements — a convolution or feedforward network is used to represent an observation ${o}$ as a vector embedding ${z'}$. To understand the dynamics within the data, the local and global context of the dynamics are extracted by aggregating the vector embedding ${z'}$ using a self-attention network~\cite{NIPS2017_3f5ee243}.
+\\
+\textbf{The encoder network.} Depending on the type of observations --- pixel images or direct measurements --- a convolution or feedforward network is used to represent an observation ${o}$ as a vector embedding ${z'}$. To understand the dynamics within the data, the local and global context of the dynamics are extracted by aggregating the vector embedding ${z'}$ using a self-attention network~\cite{NIPS2017_3f5ee243}.
 \\
 Firstly, to incorporate positional information, a positional encoding is added to the embeddings which are then stacked over ${\tau}$ steps to form a matrix. Secondly, to calculate the attention softmax is taken over the ${\tau}$ steps. Thirdly, to allow the model to jointly attend to information from different representation subspaces at different positions the multi-head attention mechanism is applied (\ref{eq:multihead},\ref{eq:attention}).
 \begin{equation}
@@ -95,7 +96,7 @@ Finally, using Gaussian and Mises distributions as posterior for translational a
   \label{eq:fourier}
   \tilde{X}_{\omega}(j) := \sum_{k=t-\tau+1}^{t} \tilde{x}_k(j) \left( \cos \left(\frac{2\pi}{\tau} \omega k \right) - i \cdot \sin \left(\frac{2\pi}{\tau} \omega k \right) \right)
 \end{equation}
-\textbf{The neural tangent kernel (NTK) theory.} The choice of using magnitudes of the Fourier features for periodic systems can be justified by looking at neural tangent kernels~\cite{NEURIPS2018_5a4be1fa} of different Fourier mappings. Consider a set of labelled training data $\{(v_i, y_i)\}_{i=1}^{m}$ with $v_i \in \mathbb{R}^n$, $y_i \in \mathbb{R}$, and $i \in [1 : m]$, where state trajectory is ${\mathbf{v} = [x_0, x_1, \ldots, x_{\tau-1}]^T}$ and ${\phi: \mathbb{R}^n \rightarrow \mathbb{R}^r}$ with kernel ${k(\mathbf{v}_i, \mathbf{v}_j) = (\mathbf{v}_i)^T (\mathbf{v}_j)}$ is a feature map. Set $\mathbf{y} = [y_1, \ldots, y_m]^T \in \mathbb{R}^m$ and $K = [k(\mathbf{v}_i, \mathbf{v}_j)] \in \mathbb{R}^{m \times m}$ denote the kernel matrix for the training examples and $k(\mathbf{v}) = [k(\mathbf{v}_i, \mathbf{v})] \in \mathbb{R}^{m}$ denote the vector of kernel evaluations $k(\mathbf{v}_i, \mathbf{v})$, $i \in [1, m]$, for a test sample $\mathbf{v} \in \mathbb{R}^n$. The resulting kernel regression predictor is $\hat{y}(\mathbf{v}) = \mathbf{y}^T K^{-1} k(\mathbf{v})$.
+\textbf{The neural tangent kernel (NTK) theory.} The choice of using magnitudes of the Fourier features for periodic systems can be justified by looking at neural tangent kernels~\cite{NEURIPS2018_5a4be1fa} of different Fourier mappings. Consider a set of labelled training data $\{(v_i, y_i)\}_{i=1}^{m}$ with $v_i \in \mathbb{R}^n$, $y_i \in \mathbb{R}$, and $i \in [1 : m]$, where state trajectory is ${\mathbf{v} = [x_0, x_1, \ldots, x_{\tau-1}]^T}$ and ${\phi: \mathbb{R}^n \rightarrow \mathbb{R}^r}$ with kernel ${k(\mathbf{v}_i, \mathbf{v}_j) = (\mathbf{v}_i)^T (\mathbf{v}_j)}$ is a feature map. Set $\mathbf{y} = [y_1, \ldots, y_m]^T \in \mathbb{R}^m$, $K = [k(\mathbf{v}_i, \mathbf{v}_j)] \in \mathbb{R}^{m \times m}$ denote the kernel matrix for the training examples and $k(\mathbf{v}) = [k(\mathbf{v}_i, \mathbf{v})] \in \mathbb{R}^{m}$ denote the vector of kernel evaluations $k(\mathbf{v}_i, \mathbf{v})$, $i \in [1, m]$, for a test sample $\mathbf{v} \in \mathbb{R}^n$. The resulting kernel regression predictor is $\hat{y}(\mathbf{v}) = \mathbf{y}^T K^{-1} k(\mathbf{v})$.
 According to the NTK theory when the number of neurons in each layer of fully-connected deep network with weights ${\mathbf{w}}$ initialized from a Gaussian distribution ${\mathcal{N}}$ tends to infinity, and the learning rate for stochastic gradient descent tends to zero, the neural network estimator ${\hat{y}(\mathbf{v};\mathbf{w})}$ converges to the kernel regression solution. 
 \\
 The studied feature maps include the Fourier feature mapping, their magnitudes and their phases~(\ref{eq:feature_maps}).
@@ -121,10 +122,10 @@ In order to analyze the kernel spatial of different mapping we need to look at e
   \label{eq:kernel_ntk}
   k_{\text{NTK}}(v_i, v_j) = \mathbb{E}_{w \sim \mathcal{N}} \left[ \nabla_{w} \hat{y}^{(t)}(v_i;w)^\top \nabla_{w} \hat{y}^{(t)}(v_j;w) \right]
 \end{equation}
-Spatial plot shows that $k_{\text{MAG}}$ and $k_{\text{PHA}}$ have a slower decay in the high-frequency domain and therefore preserve high-frequency components in the data (Fig.~\ref{fig:eigenvalues}).
+Spatial plot shows that $k_{\text{MAG}}$ and $k_{\text{PHA}}$ have a slower decay in the high-frequency domain and therefore $k_{\text{MAG}}$ preserve most of the high-frequency components in the data (Fig.~\ref{fig:eigenvalues}).
 \begin{figure}
   \centering
-  \includegraphics[width=0.4\textwidth]{eigenvalues}
+  \includegraphics[width=0.45\textwidth]{eigenvalues}
   \caption{Kernel spatial of the kernel matrices}
   \label{fig:eigenvalues}
 \end{figure}
@@ -148,6 +149,22 @@ where ${\triangle}$ is a sampling start interval.
   \end{aligned}
 \end{equation}
 \section{Performance Evaluation}
+To evaluate the ALPS performance and an effect of chosen self-attention and Fourier mapping mechanisms the following baselines methods were selected for comparison.
+\begin{enumerate}
+  \item Context-aware dynamics model (CaDM)~\cite{lee2020context}. This state-of-the-art method that decomposes the task of learning a global dynamics model into two stages: learning a context latent vector that captures the local dynamics and then predicting the next state conditioned on it.
+  \item Autoencoder --- ALPS w/o estimator and physics simulator.
+  \item ALPS w/o the Fourier feature mapping --- Fourier feature mapping is replaces with raw state trajectories ${\tilde{x}_{s}}$.
+  \item ALPS w/o self-attention networks --- self-attention network in the encoder is replaced by a simple MLP.
+\end{enumerate}
+The models are compared based on three errors: state prediction error (SE), observation prediction error (OE) and parameter prediction error (PE) in solving the task of estimating physical parameters of three visual systems: pendulum, mass-spring-damper (MSD) and two-body. To generate a dataset, first, for each task initial state and physical parameters were sampled randomly, then 125 step rollout following the true system dynamics were rendered in a form of 64 by 64 by 3 pixel observation snapshots.
+\begin{figure}
+  \centering
+  \includegraphics[width=0.45\textwidth]{ALPS_performance}
+  \caption{Performance of tested networks in the visual tasks}
+  \label{fig:performance}
+\end{figure}
+\\
+The performance evaluation results shows (Fig.~\ref{fig:performance}) that ALPS reaches the best performance in predicting physical parameters utilizing both, self-attention and Fourier mapping. Moreover, Fourier feature mapping improves the results for pendulum, MSD, but two-body task, which proves using the mapping for systems that involve periodical or vibrational behavior. Regarding state predictions, ALPS achieves competitive results among the networks. In addition, it is visible that without self-attention networks, the SE increase drastically due to a large error in computing the velocity. Moreover, the high SE in the encoder network suggests that its latent representation is uninterpretable, which proves the idea of using physics to constrain the representation for estimating states in the encoder network. Lately, ALPS actives a comparable results in reconstructing observations. 
 \section{ALPS Limitations}
 A Impact of ALPS (and assumptions)
 \section{Future Work}

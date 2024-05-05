@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex learning-physics"] 1714648225 "learning-physics.aux" "learning-physics.bbl" "learning-physics" 1714649901 0
-  "./learning-physics.bib" 1714565643 5254 6b4a04306ea8b321004a756c5176c7ff ""
+["bibtex learning-physics"] 1714911080 "learning-physics.aux" "learning-physics.bbl" "learning-physics" 1714926635 0
+  "./learning-physics.bib" 1714908919 5683 2dbd2f7cb984ec013213ff8e25b565ee ""
   "/usr/local/texlive/2023/texmf-dist/bibtex/bst/acmart/ACM-Reference-Format.bst" 1653856601 90333 ccee583820c555b8fd3c6d1b9f362b14 ""
-  "learning-physics.aux" 1714649901 3559 edadff4e8b1a8d708b16d39b20729fa8 "pdflatex"
+  "learning-physics.aux" 1714926635 3938 ce20e8b7b355907426559cf028db898e "pdflatex"
   (generated)
   "learning-physics.bbl"
   "learning-physics.blg"
   (rewritten before read)
-["pdflatex"] 1714649899 "/Users/izabellapavlova/Desktop/TUM CSE/SS24/Seminar DL4P/TumSeminarReport/learning-physics/learning-physics.tex" "learning-physics.pdf" "learning-physics" 1714649901 0
-  "/Users/izabellapavlova/Desktop/TUM CSE/SS24/Seminar DL4P/TumSeminarReport/learning-physics/learning-physics.tex" 1714649900 14626 5bb5db4ea541b6ae9259c5cb4c1e92b6 ""
+["pdflatex"] 1714926634 "/Users/izabellapavlova/Desktop/TUM CSE/SS24/Seminar DL4P/TumSeminarReport/learning-physics/learning-physics.tex" "learning-physics.pdf" "learning-physics" 1714926635 0
+  "/Users/izabellapavlova/Desktop/TUM CSE/SS24/Seminar DL4P/TumSeminarReport/learning-physics/learning-physics.tex" 1714926633 17061 86192fb1cb47a1e1b62007a7eaba6b5d ""
   "/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/libertine/lbtn_25tcsq.enc" 1490131464 2921 8ca0eb0831f9bc5da080d3697cfe67bf ""
   "/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/libertine/lbtn_76gpa5.enc" 1490131464 2933 9ad527ce78d7c5fa0a642dead095f172 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/libertine/lbtn_7grukw.enc" 1490131464 2934 a4a9158faed2e9e89c771b4e3b7fc12f ""
@@ -197,12 +197,13 @@
   "/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1679924615 4623355 b8cad38412faebe1ce5b780a45db67bd ""
   "/usr/local/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1679924563 7883459 3dc16da55f8ed54f400a3e6d5a0454e4 ""
   "/usr/local/texlive/2023/texmf.cnf" 1678822455 577 1b2b1af17af2508fb20dd85783af4050 ""
+  "ALPS_performance.jpeg" 1714910906 440086 d1d02600ba74250a97ade13f454d41c6 ""
   "architecture.png" 1714390716 444100 1717161ae6e384d66f25625f09e01c14 ""
   "eigenvalues.png" 1714648038 689049 172f93af72500712aa07d02041bdcca1 ""
-  "learning-physics.aux" 1714649901 3559 edadff4e8b1a8d708b16d39b20729fa8 "pdflatex"
-  "learning-physics.bbl" 1714648225 7356 9df71b810fbf15ae12b706ed6336f42b "bibtex learning-physics"
-  "learning-physics.out" 1714649901 1077 6b18f65c8980d5071bb707ae75fd1958 "pdflatex"
-  "learning-physics.tex" 1714649900 14626 5bb5db4ea541b6ae9259c5cb4c1e92b6 ""
+  "learning-physics.aux" 1714926635 3938 ce20e8b7b355907426559cf028db898e "pdflatex"
+  "learning-physics.bbl" 1714911081 8013 2f22da22d38f1a4fe9818ca170913f6d "bibtex learning-physics"
+  "learning-physics.out" 1714926635 1077 ee4761a648a91e32eeb1c0fa3d0e7f60 "pdflatex"
+  "learning-physics.tex" 1714926633 17061 86192fb1cb47a1e1b62007a7eaba6b5d ""
   "techreportacmart.cls" 1714303713 72626 98432b68d54c8f8671cd978b7dc63e71 ""
   (generated)
   "learning-physics.aux"

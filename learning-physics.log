@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.3.27)  2 MAY 2024 12:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.3.27)  5 MAY 2024 18:30
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -820,43 +820,47 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 File: architecture.png Graphic file (type png)
 <use architecture.png>
 Package pdftex.def Info: architecture.png  used on input line 75.
-(pdftex.def)             Requested size: 204.11488pt x 212.5476pt.
+(pdftex.def)             Requested size: 229.63118pt x 239.11533pt.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
 (Font)              scaled to size 8.0pt on input line 76.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
-(Font)              scaled to size 9.0pt on input line 79.
+(Font)              scaled to size 9.0pt on input line 80.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 7.3pt on input line 84.
+(Font)              scaled to size 7.3pt on input line 85.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 5.5pt on input line 84.
+(Font)              scaled to size 5.5pt on input line 85.
  [1.1{/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/libertine/lbtn_25tcsq.enc}
 
 {/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/libertine/lbtn_76gpa5.enc}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/libertine/lbtn_oexx6f.enc}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/libertine/lbtn_nh77jq.enc} <./architecture.png>]
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/sb/n' will be
-(Font)              scaled to size 9.0pt on input line 98.
+(Font)              scaled to size 9.0pt on input line 99.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/sb/n' will be
-(Font)              scaled to size 7.3pt on input line 98.
+(Font)              scaled to size 7.3pt on input line 99.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/sb/n' will be
-(Font)              scaled to size 5.5pt on input line 98.
-<eigenvalues.png, id=87, 1112.65688pt x 402.00188pt>
+(Font)              scaled to size 5.5pt on input line 99.
+<eigenvalues.png, id=84, 1112.65688pt x 402.00188pt>
 File: eigenvalues.png Graphic file (type png)
 <use eigenvalues.png>
-Package pdftex.def Info: eigenvalues.png  used on input line 127.
-(pdftex.def)             Requested size: 204.11488pt x 73.7435pt.
- Excluding 'screenonly' comment. (./learning-physics.bbl
-LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
-(Font)              scaled to size 7.0pt on input line 43.
-LaTeX Font Info:    Trying to load font information for TS1+LinuxBiolinumT-TLF on input line 49.
+Package pdftex.def Info: eigenvalues.png  used on input line 128.
+(pdftex.def)             Requested size: 229.63118pt x 82.96297pt.
+<ALPS_performance.jpeg, id=91, 1522.68875pt x 358.33875pt>
+File: ALPS_performance.jpeg Graphic file (type jpg)
+<use ALPS_performance.jpeg>
+Package pdftex.def Info: ALPS_performance.jpeg  used on input line 162.
+(pdftex.def)             Requested size: 229.63118pt x 54.03828pt.
+LaTeX Font Info:    Trying to load font information for TS1+LinuxBiolinumT-TLF on input line 168.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/libertine/TS1LinuxBiolinumT-TLF.fd
 File: TS1LinuxBiolinumT-TLF.fd 2017/03/20 (autoinst) Font definitions for TS1/LinuxBiolinumT-TLF.
 )
 LaTeX Font Info:    Font shape `TS1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 9.0pt on input line 49.
+(Font)              scaled to size 9.0pt on input line 168.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `LinuxBiolinumT-TLF' (encoding: TS1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [2.2{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/libertine/lbtn_afusau.enc}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/libertine/lbtn_fygcup.enc} <./eigenvalues.png>]
+ [2.2{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/libertine/lbtn_afusau.enc}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/libertine/lbtn_fygcup.enc} <./eigenvalues.png>] Excluding 'screenonly' comment. (./learning-physics.bbl
+LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
+(Font)              scaled to size 7.0pt on input line 43.
 LaTeX Info: Redefining \tempurl on input line 57.
 LaTeX Info: Redefining \tempurl on input line 67.
 
@@ -874,39 +878,38 @@ Underfull \hbox (badness 5260) in paragraph at lines 63--70
 \T1/LinuxLibertineT-TLF/m/it/7 (+20) vances in Neu-ral In-for-ma-tion Pro-cess-ing Sys-tems\T1/LinuxLibertineT-TLF/m/n/7 (+20) , S. Ben-gio, H. Wal-lach,
  []
 
-LaTeX Info: Redefining \tempurl on input line 79.
-LaTeX Info: Redefining \tempurl on input line 90.
-LaTeX Info: Redefining \tempurl on input line 101.
-LaTeX Info: Redefining \tempurl on input line 112.
+LaTeX Info: Redefining \tempurl on input line 78.
+LaTeX Info: Redefining \tempurl on input line 89.
+LaTeX Info: Redefining \tempurl on input line 100.
+LaTeX Info: Redefining \tempurl on input line 111.
+LaTeX Info: Redefining \tempurl on input line 122.
 
-Underfull \hbox (badness 2119) in paragraph at lines 108--115
+Underfull \hbox (badness 2119) in paragraph at lines 118--125
 []\T1/LinuxLibertineT-TLF/m/n/7 (+20) Tsung-Yen Yang, Jus-tinian Rosca, Karthik Narasimhan, and Pe-ter J Ra-madge.
  []
 
 
-Underfull \hbox (badness 2990) in paragraph at lines 108--115
+Underfull \hbox (badness 2990) in paragraph at lines 118--125
 \T1/LinuxLibertineT-TLF/m/n/7 (+20) wal, D. Bel-grave, K. Cho, and A. Oh (Eds.), Vol. 35. Cur-ran As-so-ciates,
  []
 
-) [3.3{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/libertine/lbtn_7grukw.enc}
-
-] (./learning-physics.aux)
+) [3.3{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/libertine/lbtn_7grukw.enc} <./ALPS_performance.jpeg>] (./learning-physics.aux)
 Package rerunfilecheck Info: File `learning-physics.out' has not changed.
-(rerunfilecheck)             Checksum: 6B18F65C8980D5071BB707AE75FD1958;1077.
+(rerunfilecheck)             Checksum: EE4761A648A91E32EEB1C0FA3D0E7F60;1077.
  ) 
 Here is how much of TeX's memory you used:
- 20676 strings out of 476025
- 334525 string characters out of 5790017
- 1883388 words of memory out of 5000000
- 40288 multiletter control sequences out of 15000+600000
- 636144 words of font info for 283 fonts, out of 8000000 for 9000
+ 20702 strings out of 476025
+ 335012 string characters out of 5790017
+ 1886388 words of memory out of 5000000
+ 40308 multiletter control sequences out of 15000+600000
+ 635905 words of font info for 281 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
- 90i,12n,131p,1254b,687s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 90i,12n,131p,1251b,527s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/newtx/LibertineMathMI.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/newtx/LibertineMathMI7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/libertine/LinBiolinumT.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/libertine/LinLibertineT.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/libertine/LinLibertineTB.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/libertine/LinLibertineTI.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/libertine/LinLibertineTZ.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/newtx/txexs.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/txfonts/txsyb.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/newtx/txsys.pfb>
-Output written on learning-physics.pdf (3 pages, 1068496 bytes).
+Output written on learning-physics.pdf (3 pages, 1513000 bytes).
 PDF statistics:
- 194 PDF objects out of 1000 (max. 8388607)
- 159 compressed objects within 2 object streams
- 31 named destinations out of 1000 (max. 500000)
- 73811 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 207 PDF objects out of 1000 (max. 8388607)
+ 171 compressed objects within 2 object streams
+ 37 named destinations out of 1000 (max. 500000)
+ 73816 words of extra memory for PDF output out of 74296 (max. 10000000)
 
