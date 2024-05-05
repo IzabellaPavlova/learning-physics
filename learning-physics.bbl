@@ -2,7 +2,7 @@
 %%% Do NOT edit. File created by BibTeX with style
 %%% ACM-Reference-Format-Journals [18-Jan-2012].
 
-\begin{thebibliography}{8}
+\begin{thebibliography}{15}
 
 %%% ====================================================================
 %%% NOTE TO THE USER: you can override these defaults by providing
@@ -37,6 +37,27 @@
 \providecommand\natexlab[1]{#1}
 \providecommand\showeprint[2][]{arXiv:#2}
 
+\bibitem[Battaglia et~al\mbox{.}(2016)]%
+        {battaglia2016interaction}
+\bibfield{author}{\bibinfo{person}{Peter~W. Battaglia}, \bibinfo{person}{Razvan Pascanu}, \bibinfo{person}{Matthew Lai}, \bibinfo{person}{Danilo~Jimenez Rezende}, {and} \bibinfo{person}{Koray Kavukcuoglu}.} \bibinfo{year}{2016}\natexlab{}.
+\newblock \showarticletitle{Interaction networks for learning about objects, relations and physics}. In \bibinfo{booktitle}{\emph{Advances in Neural Information Processing Systems 29: Annual Conference on Neural Information Processing Systems 2016}}, \bibfield{editor}{\bibinfo{person}{Daniel~D. Lee}, \bibinfo{person}{Masashi Sugiyama}, \bibinfo{person}{Ulrike von Luxburg}, \bibinfo{person}{Isabelle Guyon}, {and} \bibinfo{person}{Roman Garnett}} (Eds.). \bibinfo{address}{Barcelona, Spain}, \bibinfo{pages}{4502--4510}.
+\newblock
+
+
+\bibitem[Botev et~al\mbox{.}(2021)]%
+        {botev2021which}
+\bibfield{author}{\bibinfo{person}{Aleksandar Botev}, \bibinfo{person}{Andrew Jaegle}, \bibinfo{person}{Peter Wirnsberger}, \bibinfo{person}{Daniel Hennes}, {and} \bibinfo{person}{Irina Higgins}.} \bibinfo{year}{2021}\natexlab{}.
+\newblock \showarticletitle{Which priors matter? Benchmarking models for learning latent dynamics}.
+\newblock \bibinfo{journal}{\emph{arXiv preprint arXiv:2111.05458}} (\bibinfo{date}{Nov} \bibinfo{year}{2021}).
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.48550/arXiv.2111.05458}
+\showDOI{\tempurl}
+\showeprint[arxiv]{2111.05458}~[stat.ML]
+\newblock
+\shownote{Submitted on 9 Nov 2021}.
+
+
 \bibitem[Chen et~al\mbox{.}(2018)]%
         {NEURIPS2018_69386f6b}
 \bibfield{author}{\bibinfo{person}{Ricky T.~Q. Chen}, \bibinfo{person}{Yulia Rubanova}, \bibinfo{person}{Jesse Bettencourt}, {and} \bibinfo{person}{David~K Duvenaud}.} \bibinfo{year}{2018}\natexlab{}.
@@ -46,6 +67,19 @@
 \url{https://proceedings.neurips.cc/paper_files/paper/2018/file/69386f6bb1dfed68692a24c8686939b9-Paper.pdf}
 \showURL{%
 \tempurl}
+
+
+\bibitem[Chen et~al\mbox{.}(2019)]%
+        {chen2019symplectic}
+\bibfield{author}{\bibinfo{person}{Zhengdao Chen}, \bibinfo{person}{Jianyu Zhang}, \bibinfo{person}{Martin Arjovsky}, {and} \bibinfo{person}{Léon Bottou}.} \bibinfo{year}{2019}\natexlab{}.
+\newblock \showarticletitle{Symplectic Recurrent Neural Networks}.
+\newblock \bibinfo{journal}{\emph{arXiv preprint arXiv:1909.13334}} (\bibinfo{year}{2019}).
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.48550/arXiv.1909.13334}
+\showDOI{\tempurl}
+\newblock
+\shownote{Journal reference: 8th International Conference on Learning Representations (ICLR 2020)}.
 
 
 \bibitem[He et~al\mbox{.}(2016)]%
@@ -79,6 +113,18 @@
 \showDOI{\tempurl}
 
 
+\bibitem[Lutter et~al\mbox{.}(2019)]%
+        {lutter2019deep}
+\bibfield{author}{\bibinfo{person}{Michael Lutter}, \bibinfo{person}{Christian Ritter}, {and} \bibinfo{person}{Jan Peters}.} \bibinfo{year}{2019}\natexlab{}.
+\newblock \showarticletitle{Deep Lagrangian Networks: Using Physics as Model Prior for Deep Learning}. In \bibinfo{booktitle}{\emph{International Conference on Learning Representations (ICLR)}}. ICLR, \bibinfo{publisher}{Technische Universit{\"a}t Darmstadt}, \bibinfo{address}{Darmstadt, Germany}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.48550/arXiv.1907.04490}
+\showDOI{\tempurl}
+\newblock
+\shownote{Published as a conference paper at ICLR 2019}.
+
+
 \bibitem[Rahaman et~al\mbox{.}(2019)]%
         {rahamanspectral}
 \bibfield{author}{\bibinfo{person}{Nasim Rahaman}, \bibinfo{person}{Aristide Baratin}, \bibinfo{person}{Devansh Arpit}, \bibinfo{person}{Felix Draxler}, \bibinfo{person}{Min Lin}, \bibinfo{person}{Fred Hamprecht}, \bibinfo{person}{Yoshua Bengio}, {and} \bibinfo{person}{Aaron Courville}.} \bibinfo{year}{2019}\natexlab{}.
@@ -91,6 +137,14 @@
 \tempurl}
 
 
+\bibitem[Scarselli et~al\mbox{.}(2009)]%
+        {scarselli2009graph}
+\bibfield{author}{\bibinfo{person}{Franco Scarselli}, \bibinfo{person}{Marco Gori}, \bibinfo{person}{Ah~Chung Tsoi}, \bibinfo{person}{Markus Hagenbuchner}, {and} \bibinfo{person}{Gabriele Monfardini}.} \bibinfo{year}{2009}\natexlab{}.
+\newblock \showarticletitle{The graph neural network model}.
+\newblock \bibinfo{journal}{\emph{IEEE Transactions on Neural Networks}} \bibinfo{volume}{20}, \bibinfo{number}{1} (\bibinfo{year}{2009}), \bibinfo{pages}{61--80}.
+\newblock
+
+
 \bibitem[Tancik et~al\mbox{.}(2020)]%
         {tancik2020ffn}
 \bibfield{author}{\bibinfo{person}{Matthew Tancik}, \bibinfo{person}{Pratul~P. Srinivasan}, \bibinfo{person}{Ben Mildenhall}, \bibinfo{person}{Sara Fridovich-Keil}, \bibinfo{person}{Nithin Raghavan}, \bibinfo{person}{Utkarsh Singhal}, \bibinfo{person}{Ravi Ramamoorthi}, \bibinfo{person}{Jonathan~T. Barron}, {and} \bibinfo{person}{Ren Ng}.} \bibinfo{year}{2020}\natexlab{}.
@@ -100,6 +154,18 @@
 \url{http://arxiv.org/abs/2006.10739v1}
 \showURL{%
 \tempurl}
+
+
+\bibitem[Toth et~al\mbox{.}(2020)]%
+        {toth2019hamiltonian}
+\bibfield{author}{\bibinfo{person}{Peter Toth}, \bibinfo{person}{Danilo~Jimenez Rezende}, \bibinfo{person}{Andrew Jaegle}, \bibinfo{person}{S{\'e}bastien Racani{\`e}re}, \bibinfo{person}{Aleksandar Botev}, {and} \bibinfo{person}{Irina Higgins}.} \bibinfo{year}{2020}\natexlab{}.
+\newblock \showarticletitle{Hamiltonian Generative Networks}. In \bibinfo{booktitle}{\emph{Proceedings of International Conference on Learning Representations (ICLR)}}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.48550/arXiv.1909.13789}
+\showDOI{\tempurl}
+\newblock
+\shownote{Submitted on 30 Sep 2019 (v1), last revised 14 Feb 2020 (this version, v2)}.
 
 
 \bibitem[Vaswani et~al\mbox{.}(2017)]%
@@ -122,6 +188,20 @@
 \url{https://proceedings.neurips.cc/paper_files/paper/2022/file/6d5e035724687454549b97d6c805dc84-Paper-Conference.pdf}
 \showURL{%
 \tempurl}
+
+
+\bibitem[Ye et~al\mbox{.}(2024)]%
+        {ye2024unsupervised}
+\bibfield{author}{\bibinfo{person}{Yubo Ye}, \bibinfo{person}{Sumeet Vadhavkar}, \bibinfo{person}{Xiajun Jiang}, \bibinfo{person}{Ryan Missel}, \bibinfo{person}{Huafeng Liu}, {and} \bibinfo{person}{Linwei Wang}.} \bibinfo{year}{2024}\natexlab{}.
+\newblock \bibinfo{title}{Unsupervised Learning of Hybrid Latent Dynamics: A Learn-to-Identify Framework}.
+\newblock
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.48550/arXiv.2403.08194}
+\showDOI{\tempurl}
+\showeprint[arxiv]{2403.08194}~[cs.LG]
+\newblock
+\shownote{Under Review}.
 
 
 \end{thebibliography}

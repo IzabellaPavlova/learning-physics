@@ -1135,6 +1135,10 @@ INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/libertine/LinLibertine
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/libertine/lbtn_fygcup.enc
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/vf/public/libertine/LinLibertineT-tlf-t1.vf
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/libertine/LinLibertineT-tlf-t1--base.tfm
+INPUT ./integration.png
+INPUT integration.png
+INPUT ./integration.png
+INPUT ./integration.png
 INPUT ./learning-physics.bbl
 INPUT learning-physics.bbl
 INPUT ./learning-physics.bbl

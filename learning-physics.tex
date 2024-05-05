@@ -166,16 +166,19 @@ The models are compared based on three errors: state prediction error (SE), obse
 \\
 The performance evaluation results shows (Fig.~\ref{fig:performance}) that ALPS reaches the best performance in predicting physical parameters utilizing both, self-attention and Fourier mapping. Moreover, Fourier feature mapping improves the results for pendulum, MSD, but two-body task, which proves using the mapping for systems that involve periodical or vibrational behavior. Regarding state predictions, ALPS achieves competitive results among the networks. In addition, it is visible that without self-attention networks, the SE increase drastically due to a large error in computing the velocity. Moreover, the high SE in the encoder network suggests that its latent representation is uninterpretable, which proves the idea of using physics to constrain the representation for estimating states in the encoder network. Lately, ALPS actives a comparable results in reconstructing observations. 
 \section{ALPS Limitations}
-A Impact of ALPS (and assumptions)
-\section{Future Work}
-We think the future extension
-of ALPS to differentiable rendering engines is a valuable future research direction.
+\textbf{The first limitation} that make it challenging to apply ALPS to more complicated systems such as contact and fluid dynamics is the requirement for system to have a dynamic equation coupled with an assumption that the system is linear. The solution for this challenge might be found in combining known physics with neural models. One of the possible approaches is using interaction networks~\cite{battaglia2016interaction} as a neural model. The model can reason about how objects in complex systems interact, including dynamical predictions. For physical reasoning, the model takes a graph of objects and relations as input~\cite{scarselli2009graph}, reasons about their interactions, and applies the effects and physical dynamics to predict new states. Another approach is to use a framework for unsupervised meta-learning of hybrid latent dynamics~\cite{ye2024unsupervised} (Meta-HyLaD). The Meta-HyLaD consists of two parts: the first part is integrating established mathematical expressions representing prior physics with neural functions that capture unknown errors to form a latent dynamic function; the second part is employing a meta-learning framework aimed at discerning and separately characterizing both components within the hybrid dynamics.
 \\
-We see that the network mostly uses the observation in the beginning and the end of the attention
-mask to infer states. This suggests that the network learns to predict an average velocity. In addition,
-we see that there are vertical attention patterns, which happens to be at the peak of the cosine wave.
-We suspect that the network uses this information as an anchor to capture the periodic behavior of the
-pendulum. We leave this as a future work to understand the network.
+\textbf{The second limitation} is the requirement of neural ODE solver when simulating trajectories, which in addition results in high computational costs. The solution to the challenge might be found in using other technique to insert prior knowledge~\cite{botev2021which}. Using Hamiltonian Generative Networks (HGN)~\cite{toth2019hamiltonian} and Lagrangian Generative Networks (LGN)~\cite{lutter2019deep} as priors involves parameterizing kinetic and potential energies with neural networks. These networks, along with the encoder's latent state, enable simulating motion equations using numerical integrators like leap-frog for HGN and adaptive stepsize Runge-Kutta for LGN. Another approach is using Recurrent Generative Network (RGN)~\cite{chen2019symplectic} that uses the same MLP as the Neural ODE model but parametrizes the discrete state evolution in latent space. 
+\section{Future Work}
+One possible direction for future work is to study the self-attention mechanism more precisely. By visualizing attention weights in a simple vehicle steering dynamics scenario with the lateral path deviation ${x^{p}}$ and turning rate ${x^{r}}$, it might be observed that the network primarily utilizes observations at the beginning and end of attention, suggesting a prediction of average velocity. Moreover, by analyzing the experiment of estimating ${x^{r}}$ from ${x^{p}}$ and vice versa. In the first case, the network attends to the neighboring
+observations at the current time (diagonal pattern) and performs derivative operation (local context). In the second case (Fig.~\ref{fig:integration}) the network attends to the observations from beginning to the current time (triangular pattern) and performs integration operation (global context).
+Another possible direction is an extension of ALPS to differentiable rendering engines.
+\begin{figure}
+  \centering
+  \includegraphics[width=0.45\textwidth]{integration}
+  \caption{Estimation of literal path deviation from the turning rate}
+  \label{fig:integration}
+\end{figure}
 \section{Conclusions}
 
 \begin{screenonly}
