@@ -30,32 +30,14 @@
 \renewcommand\shortauthors{Pavlova}
 
 \begin{abstract}
-Multifrequency media access control has been well understood in
-general wireless ad hoc networks, while in wireless sensor networks,
-researchers still focus on single frequency solutions. In wireless
-sensor networks, each device is typically equipped with a single
-radio transceiver and applications adopt much smaller packet sizes
-compared to those in general wireless ad hoc networks. Hence, the
-multifrequency MAC protocols proposed for general wireless ad hoc
-networks are not suitable for wireless sensor network applications,
-which we further demonstrate through our simulation experiments. In
-this article, we propose MMSN, which takes advantage of
-multifrequency availability while, at the same time, takes into
-consideration the restrictions of wireless sensor networks. Through
-extensive experiments, MMSN exhibits the prominent ability to utilize
-parallel transmissions among neighboring nodes. When multiple physical
-frequencies are available, it also achieves increased energy
-efficiency, demonstrating the ability to work against radio
-interference and the tolerance to a wide range of measured time
-synchronization errors.
+With the increasing integration of neural networks (NN) in physics and control systems, this paper explores the application of NN models for estimating states and physical parameters from observations when the behavior of the system is described with dynamic equation provided. To address the problem we use the autoencoder with Latent Physics (ALPS) model, which consists of an encoder, estimator, physics simulator, and decoder. The encoder estimates states from observations, the estimator predicts physical parameters from these states, the physics simulator generates state trajectories consistent with the laws of physics and the decoder reconstructs observations from the simulated states. Furthermore, the paper demonstrates the benefits of incorporating self-attention mechanisms and Fourier mapping techniques, supported by the Neural Tangent Kernel (NTK) theory. Moreover, performance, limitations and directions for future research are discussed.
 \end{abstract}
 
 %
 % End generated code
 %
 
-\keywords{Wireless sensor networks, media access control,
-multi-channel, radio interference, time synchronization}
+\keywords{Dynamic system parameters estimation, control systems, neural tangent theory, Fourier feature mapping}
 
 
 \thanks{This report is a part of the lecture, Master-Seminar --- Deep Learning in Physics, Informatics 15, Technical University of Munich.
@@ -66,10 +48,20 @@ The original work is introduced by~\cite{NEURIPS2022_6d5e0357}.}
 
 \section{Introduction} % problem statement
 % TODO: discrete points are equally spaced in time
-In addition, one may think that the estimator network can directly predict the system parameters given the input observation without taking the states. The reason to predict the states is that for some applications, it may be useful to know the state of the system. For example, for a self-driving car, we would like to know the speed of other vehicles by using observations from cameras. Knowing the speed of other vehicles (i.e., , the state) allows the self-driving car to plan for a trajectory, which is important for the safe deployment of the system. In addition, we would like to increase the interpretability of the model. The inclusion of the state allows the system designer to ensure the representation learned by neural networks is informative.
+We explore the problem of estimating states (e.g., position and velocity) and physical parameters (e.g., friction, elasticity) from a sequence of observations when provided a dynamic equation that describes the behavior of the system. Estimated states ensure the representation learned by neural networks to be informative and might be useful in some applications where we want to know the state of other objects in the system. For example, in case of self-driving car, we would like to predict the speed of other vehicles around using observations from cameras and adjust the car trajectory considering this parameters. Knowing the physical parameters of a system is fundamental for modeling, predicting, controlling, optimizing, diagnosing faults, and ensuring the safety and reliability of the system in various applications.
+\\
+We consider the continuous-time system
+\begin{align}
+  \label{eq:system}
+  \dot{x} &= Ax + Bu; & o &= g(x),
+\end{align}
+where $A \in \mathbb{R}^{n \times n}$, $B \in \mathbb{R}^{n \times p}$, and $x \in \mathbb{R}^n$, $u \in \mathbb{R}^p$, $o \in \mathbb{R}^q$, denote the state, input, and observation, respectively. The function $g$ provides a partial observation $o$ of $x$. In addition, we have partial knowledge of $A$ and $B$ from physics. We assume the system~(\ref{eq:system}) to be linear. Moreover, in practice we can only make discrete observation --- pixel images or direct measurements. For simplicity, we assume the times are equally spaced $t = 0, 1, \ldots$. At each sample time $t$, we have the window of observations $\{o_s\}_{s=t-\tau+1}$, where $\tau$ is the window length. We assume the sampling rate satisfies the Nyquist rate, meaning the sampling rate enables us to represent a continuous-time signal in digital form without loosing the information. In addition, to make the problem well-defined we assume that for a sufficiently large $\tau$, the sequence of states and inputs $\{(x_s, u_s)\}_{s=t-\tau+1}$ uniquely specifies the unknown parameter $\theta$.
 \section{Background} % physics-informed learning + koopmann
+\textbf{Physics-informed neural networks.}
+\\
+\textbf{Koopman-inspired neural networks.}
 \section{ALPS Architecture}
-The autoencoder with latent physics (ALPS) model (Fig.~\ref{fig:architecture}) estimates states and physical parameters of the system using four main components. Firstly, encoder ${h}$ estimates states $\tilde{x}_{s}$ from an observation sequence ${o_s}$. Secondly, estimator ${f}$ predicts physical parameters ${\theta}$  from the states $\tilde{x}_{s}$. Thirdly, using the initial state and predicted parameters ${\theta}$ physics simulator generates a state trajectory $\hat{x}_{s}$ consistent with the laws of physics. Lastly, a decoder ${g}$ reconstructs observations $\hat{o}_{s}$ from the state trajectory $\hat{x}_{s}$. The autoencoder is trained to minimize the observation reconstruction loss $\sum_{s} \lVert o_{s} - \hat{o}_{s} \rVert_{2}^{2}$. In addition, the encoder ${h}$ is trained to minimize the sum of squared state errors $\sum_{s} \lVert \tilde{x}_{s} - \hat{x}_{s} \rVert_{2}^{2}$.
+The ALPS model (Fig.~\ref{fig:architecture}) estimates states and physical parameters of the system using four main components. Firstly, encoder ${h}$ estimates states $\tilde{x}_{s}$ from an observation sequence ${o_s}$. Secondly, estimator ${f}$ predicts physical parameters ${\theta}$  from the states $\tilde{x}_{s}$. Thirdly, using the initial state and predicted parameters ${\theta}$ physics simulator generates a state trajectory $\hat{x}_{s}$ consistent with the laws of physics. Lastly, a decoder ${g}$ reconstructs observations $\hat{o}_{s}$ from the state trajectory $\hat{x}_{s}$. The autoencoder is trained to minimize the observation reconstruction loss $\sum_{s} \lVert o_{s} - \hat{o}_{s} \rVert_{2}^{2}$. In addition, the encoder ${h}$ is trained to minimize the sum of squared state errors $\sum_{s} \lVert \tilde{x}_{s} - \hat{x}_{s} \rVert_{2}^{2}$.
 \begin{figure}
   \centering
   \includegraphics[width=0.45\textwidth]{architecture}
@@ -96,7 +88,7 @@ Finally, using Gaussian and Mises distributions as posterior for translational a
   \label{eq:fourier}
   \tilde{X}_{\omega}(j) := \sum_{k=t-\tau+1}^{t} \tilde{x}_k(j) \left( \cos \left(\frac{2\pi}{\tau} \omega k \right) - i \cdot \sin \left(\frac{2\pi}{\tau} \omega k \right) \right)
 \end{equation}
-\textbf{The neural tangent kernel (NTK) theory.} The choice of using magnitudes of the Fourier features for periodic systems can be justified by looking at neural tangent kernels~\cite{NEURIPS2018_5a4be1fa} of different Fourier mappings. Consider a set of labelled training data $\{(v_i, y_i)\}_{i=1}^{m}$ with $v_i \in \mathbb{R}^n$, $y_i \in \mathbb{R}$, and $i \in [1 : m]$, where state trajectory is ${\mathbf{v} = [x_0, x_1, \ldots, x_{\tau-1}]^T}$ and ${\phi: \mathbb{R}^n \rightarrow \mathbb{R}^r}$ with kernel ${k(\mathbf{v}_i, \mathbf{v}_j) = (\mathbf{v}_i)^T (\mathbf{v}_j)}$ is a feature map. Set $\mathbf{y} = [y_1, \ldots, y_m]^T \in \mathbb{R}^m$, $K = [k(\mathbf{v}_i, \mathbf{v}_j)] \in \mathbb{R}^{m \times m}$ denote the kernel matrix for the training examples and $k(\mathbf{v}) = [k(\mathbf{v}_i, \mathbf{v})] \in \mathbb{R}^{m}$ denote the vector of kernel evaluations $k(\mathbf{v}_i, \mathbf{v})$, $i \in [1, m]$, for a test sample $\mathbf{v} \in \mathbb{R}^n$. The resulting kernel regression predictor is $\hat{y}(\mathbf{v}) = \mathbf{y}^T K^{-1} k(\mathbf{v})$.
+\textbf{The Neural Tangent Kernel theory.} The choice of using magnitudes of the Fourier features for periodic systems can be justified by looking at neural tangent kernels~\cite{NEURIPS2018_5a4be1fa} of different Fourier mappings. Consider a set of labelled training data $\{(v_i, y_i)\}_{i=1}^{m}$ with $v_i \in \mathbb{R}^n$, $y_i \in \mathbb{R}$, and $i \in [1 : m]$, where state trajectory is ${\mathbf{v} = [x_0, x_1, \ldots, x_{\tau-1}]^T}$ and ${\phi: \mathbb{R}^n \rightarrow \mathbb{R}^r}$ with kernel ${k(\mathbf{v}_i, \mathbf{v}_j) = (\mathbf{v}_i)^T (\mathbf{v}_j)}$ is a feature map. Set $\mathbf{y} = [y_1, \ldots, y_m]^T \in \mathbb{R}^m$, $K = [k(\mathbf{v}_i, \mathbf{v}_j)] \in \mathbb{R}^{m \times m}$ denote the kernel matrix for the training examples and $k(\mathbf{v}) = [k(\mathbf{v}_i, \mathbf{v})] \in \mathbb{R}^{m}$ denote the vector of kernel evaluations $k(\mathbf{v}_i, \mathbf{v})$, $i \in [1, m]$, for a test sample $\mathbf{v} \in \mathbb{R}^n$. The resulting kernel regression predictor is $\hat{y}(\mathbf{v}) = \mathbf{y}^T K^{-1} k(\mathbf{v})$.
 According to the NTK theory when the number of neurons in each layer of fully-connected deep network with weights ${\mathbf{w}}$ initialized from a Gaussian distribution ${\mathcal{N}}$ tends to infinity, and the learning rate for stochastic gradient descent tends to zero, the neural network estimator ${\hat{y}(\mathbf{v};\mathbf{w})}$ converges to the kernel regression solution. 
 \\
 The studied feature maps include the Fourier feature mapping, their magnitudes and their phases~(\ref{eq:feature_maps}).
@@ -180,33 +172,7 @@ Another possible direction is an extension of ALPS to differentiable rendering e
   \label{fig:integration}
 \end{figure}
 \section{Conclusions}
-
-\begin{screenonly}
-\subsection{This is an example of Appendix subsection head}
-
-Channel-switching time is measured as the time length it takes for
-motes to successfully switch from one channel to another. This
-parameter impacts the maximum network throughput, because motes
-cannot receive or send any packet during this period of time, and it
-also affects the efficiency of toggle snooping in MMSN, where motes
-need to sense through channels rapidly.
-
-By repeating experiments 100 times, we get the average
-channel-switching time of Micaz motes: 24.3 $\mu$s. We then conduct
-the same experiments with different Micaz motes, as well as
-experiments with the transmitter switching from Channel 11 to other
-channels. In both scenarios, the channel-switching time does not have
-obvious changes. (In our experiments, all values are in the range of
-23.6 $\mu$s to 24.9 $\mu$s.)
-
-\subsection{Appendix subsection head}
-
-The primary consumer of energy in WSNs is idle listening. The key to
-reduce idle listening is executing low duty-cycle on nodes. Two
-primary approaches are considered in controlling duty-cycles in the
-MAC layer.
-  
-\end{screenonly}
+In this article we addressed the problem of predicting states and physical parameters of a system from observations with dynamic equations. 
 
 % Bibliography
 \bibliographystyle{ACM-Reference-Format}
