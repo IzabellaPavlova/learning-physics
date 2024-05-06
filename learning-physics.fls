@@ -1055,6 +1055,8 @@ INPUT architecture.png
 INPUT ./architecture.png
 INPUT ./architecture.png
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/libertine/LinBiolinumT-tlf-t1.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/libertine/LinLibertineT-tlf-t1.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/libertine/LinLibertineT-tlf-t1.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/vf/public/libertine/LinBiolinumT-tlf-t1.vf
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/libertine/LinBiolinumT-tlf-t1--base.tfm
 INPUT /usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map
@@ -1100,15 +1102,11 @@ INPUT /usr/local/texlive/2023/texmf-dist/fonts/vf/public/libertine/LinLibertineT
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/libertine/LinLibertineT-tlf-ot1--base.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/vf/public/libertine/LinLibertineT-tlf-t1.vf
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/libertine/LinLibertineT-tlf-t1--base.tfm
-INPUT /usr/local/texlive/2023/texmf-dist/fonts/vf/public/libertine/LinBiolinumT-tlf-t1.vf
-INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/libertine/LinBiolinumT-tlf-t1--base.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/vf/public/libertine/LinLibertineTB-tlf-t1.vf
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/libertine/LinLibertineTB-tlf-t1--base.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/libertine/lbtn_nh77jq.enc
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/vf/public/newtx/ntxexx.vf
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/newtx/txexs.tfm
-INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/libertine/LinLibertineT-tlf-t1.tfm
-INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/libertine/LinLibertineT-tlf-t1.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/libertine/LinLibertineTZ-tlf-ot1.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/libertine/LinLibertineTZ-tlf-ot1.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/libertine/LinLibertineTZ-tlf-ot1.tfm
@@ -1126,6 +1124,8 @@ INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/libertine/LinBiolinumT
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/vf/public/libertine/LinBiolinumT-tlf-ts1.vf
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/libertine/LinBiolinumT-tlf-ts1--base.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/libertine/lbtn_afusau.enc
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/vf/public/libertine/LinBiolinumT-tlf-t1.vf
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/libertine/LinBiolinumT-tlf-t1--base.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/vf/public/libertine/LinLibertineTZ-tlf-ot1.vf
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/libertine/LinLibertineTZ-tlf-ot1--base.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/libertine/lbtn_fygcup.enc

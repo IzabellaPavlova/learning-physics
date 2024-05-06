@@ -2,7 +2,7 @@
 %%% Do NOT edit. File created by BibTeX with style
 %%% ACM-Reference-Format-Journals [18-Jan-2012].
 
-\begin{thebibliography}{15}
+\begin{thebibliography}{20}
 
 %%% ====================================================================
 %%% NOTE TO THE USER: you can override these defaults by providing
@@ -82,6 +82,14 @@
 \shownote{Journal reference: 8th International Conference on Learning Representations (ICLR 2020)}.
 
 
+\bibitem[Gupta et~al\mbox{.}(2019)]%
+        {gupta2019general}
+\bibfield{author}{\bibinfo{person}{Jayesh~K. Gupta}, \bibinfo{person}{Kunal Menda}, \bibinfo{person}{Zachary Manchester}, {and} \bibinfo{person}{Mykel~J. Kochenderfer}.} \bibinfo{year}{2019}\natexlab{}.
+\newblock \showarticletitle{A General Framework for Structured Learning of Mechanical Systems}.
+\newblock \bibinfo{journal}{\emph{arXiv preprint arXiv:1902.08705}} (\bibinfo{year}{2019}).
+\newblock
+
+
 \bibitem[He et~al\mbox{.}(2016)]%
         {7780459}
 \bibfield{author}{\bibinfo{person}{Kaiming He}, \bibinfo{person}{Xiangyu Zhang}, \bibinfo{person}{Shaoqing Ren}, {and} \bibinfo{person}{Jian Sun}.} \bibinfo{year}{2016}\natexlab{}.
@@ -113,6 +121,18 @@
 \showDOI{\tempurl}
 
 
+\bibitem[Lusch et~al\mbox{.}(2018)]%
+        {Lusch2018}
+\bibfield{author}{\bibinfo{person}{Bethany Lusch}, \bibinfo{person}{J.~Nathan Kutz}, {and} \bibinfo{person}{Steven~L. Brunton}.} \bibinfo{year}{2018}\natexlab{}.
+\newblock \showarticletitle{Deep Learning for Universal Linear Embeddings of Nonlinear Dynamics}.
+\newblock \bibinfo{journal}{\emph{Nature Communications}} \bibinfo{volume}{9}, \bibinfo{number}{1} (\bibinfo{year}{2018}), \bibinfo{pages}{4950}.
+\newblock
+\showISSN{2041-1723}
+\urldef\tempurl%
+\url{https://doi.org/10.1038/s41467-018-07210-0}
+\showDOI{\tempurl}
+
+
 \bibitem[Lutter et~al\mbox{.}(2019)]%
         {lutter2019deep}
 \bibfield{author}{\bibinfo{person}{Michael Lutter}, \bibinfo{person}{Christian Ritter}, {and} \bibinfo{person}{Jan Peters}.} \bibinfo{year}{2019}\natexlab{}.
@@ -123,6 +143,18 @@
 \showDOI{\tempurl}
 \newblock
 \shownote{Published as a conference paper at ICLR 2019}.
+
+
+\bibitem[Otto and Rowley(2019)]%
+        {otto2019linearly}
+\bibfield{author}{\bibinfo{person}{Samuel~E. Otto} {and} \bibinfo{person}{Clarence~W. Rowley}.} \bibinfo{year}{2019}\natexlab{}.
+\newblock \showarticletitle{Linearly-Recurrent Autoencoder Networks for Learning Dynamics}.
+\newblock \bibinfo{journal}{\emph{SIAM Journal on Applied Dynamical Systems}} \bibinfo{volume}{18}, \bibinfo{number}{1} (\bibinfo{year}{2019}), \bibinfo{pages}{558--593}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.48550/arXiv.1712.01378}
+\showURL{%
+\tempurl}
 
 
 \bibitem[Rahaman et~al\mbox{.}(2019)]%
@@ -137,12 +169,31 @@
 \tempurl}
 
 
+\bibitem[Sanchez-Gonzalez et~al\mbox{.}(2020)]%
+        {sanchez2020learning}
+\bibfield{author}{\bibinfo{person}{Alvaro Sanchez-Gonzalez}, \bibinfo{person}{Jonathan Godwin}, \bibinfo{person}{Tobias Pfaff}, \bibinfo{person}{Rex Ying}, \bibinfo{person}{Jure Leskovec}, {and} \bibinfo{person}{Peter~W. Battaglia}.} \bibinfo{year}{2020}\natexlab{}.
+\newblock \showarticletitle{Learning to Simulate Complex Physics with Graph Networks}. In \bibinfo{booktitle}{\emph{Proceedings of the 37th International Conference on Machine Learning, ICML 2020}}, Vol.~\bibinfo{volume}{119}. PMLR, \bibinfo{pages}{8459--8468}.
+\newblock
+
+
 \bibitem[Scarselli et~al\mbox{.}(2009)]%
         {scarselli2009graph}
 \bibfield{author}{\bibinfo{person}{Franco Scarselli}, \bibinfo{person}{Marco Gori}, \bibinfo{person}{Ah~Chung Tsoi}, \bibinfo{person}{Markus Hagenbuchner}, {and} \bibinfo{person}{Gabriele Monfardini}.} \bibinfo{year}{2009}\natexlab{}.
 \newblock \showarticletitle{The graph neural network model}.
 \newblock \bibinfo{journal}{\emph{IEEE Transactions on Neural Networks}} \bibinfo{volume}{20}, \bibinfo{number}{1} (\bibinfo{year}{2009}), \bibinfo{pages}{61--80}.
 \newblock
+
+
+\bibitem[Takeishi et~al\mbox{.}(2017)]%
+        {takeishi2017learning}
+\bibfield{author}{\bibinfo{person}{Naoya Takeishi}, \bibinfo{person}{Yoshinobu Kawahara}, {and} \bibinfo{person}{Takehisa Yairi}.} \bibinfo{year}{2017}\natexlab{}.
+\newblock \showarticletitle{Learning Koopman Invariant Subspaces for Dynamic Mode Decomposition}.
+\newblock \bibinfo{journal}{\emph{Advances in Neural Information Processing Systems}}  \bibinfo{volume}{30} (\bibinfo{year}{2017}).
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.48550/arXiv.1710.04340}
+\showURL{%
+\tempurl}
 
 
 \bibitem[Tancik et~al\mbox{.}(2020)]%
