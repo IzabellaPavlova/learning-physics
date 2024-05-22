@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.3.27)  22 MAY 2024 10:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.3.27)  22 MAY 2024 11:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -870,9 +870,6 @@ LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
 LaTeX Info: Redefining \tempurl on input line 67.
 LaTeX Info: Redefining \tempurl on input line 79.
 LaTeX Info: Redefining \tempurl on input line 93.
-
-Underfull \vbox (badness 1742) has occurred while \output is active []
-
 LaTeX Info: Redefining \tempurl on input line 114.
 LaTeX Info: Redefining \tempurl on input line 124.
 
@@ -915,18 +912,18 @@ Package rerunfilecheck Info: File `learning-physics.out' has not changed.
 (rerunfilecheck)             Checksum: 9DC1EF500AA14F6189B0B73384A7A054;963.
  ) 
 Here is how much of TeX's memory you used:
- 20846 strings out of 476025
- 338484 string characters out of 5790017
+ 20844 strings out of 476025
+ 338445 string characters out of 5790017
  1887388 words of memory out of 5000000
  40359 multiletter control sequences out of 15000+600000
- 643583 words of font info for 333 fonts, out of 8000000 for 9000
+ 643408 words of font info for 332 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
- 90i,12n,131p,1417b,527s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 90i,12n,131p,1471b,527s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/newtx/LibertineMathMI.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/newtx/LibertineMathMI7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/libertine/LinBiolinumT.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/libertine/LinLibertineT.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/libertine/LinLibertineTB.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/libertine/LinLibertineTI.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/libertine/LinLibertineTZ.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/newtx/txexs.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/txfonts/txsyb.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/newtx/txsys.pfb>
-Output written on learning-physics.pdf (4 pages, 1649561 bytes).
+Output written on learning-physics.pdf (4 pages, 1650018 bytes).
 PDF statistics:
- 269 PDF objects out of 1000 (max. 8388607)
- 229 compressed objects within 3 object streams
+ 270 PDF objects out of 1000 (max. 8388607)
+ 230 compressed objects within 3 object streams
  52 named destinations out of 1000 (max. 500000)
  73813 words of extra memory for PDF output out of 74296 (max. 10000000)
 
